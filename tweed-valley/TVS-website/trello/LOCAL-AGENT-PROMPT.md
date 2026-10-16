@@ -2,7 +2,7 @@
 
 ---
 
-Set up the TVS Trello board and do the first populate. Read `trello/CONTEXT.md`, `trello/AGENTS.md`, and `.cursor/rules/tvs-trello.mdc` before you touch the API.
+Work on the existing TVS Trello board. The first populate is already done. Read `trello/CONTEXT.md`, `trello/AGENTS.md`, and `.cursor/rules/tvs-trello.mdc` (monorepo root) before you touch the API.
 
 **Board (only this one):** https://trello.com/b/YnZDCT0g/tvs-ow-scotland  
 Credentials are already in `trello/.env`. Do not edit The team (Onewheel Algarve) or the empty TVS board in The Team Workspace. Do not commit `.env`.
@@ -16,14 +16,16 @@ A first-pass board plan is already in the repo — use it, then improve it from 
 
 ### Setup
 
-1. From `trello/`: create `.venv`, `pip install -r requirements.txt`, run `board.py status`. Confirm the board id is `6acfad99aba36ddc16ab13b7` and that you are Dan Turner.
-2. The board may be empty. Create these columns, left to right: **To Do, Venue, Legal / money, Race, Website, Marketing, Waiting**. To Do is the default.
-3. Write each list id into `trello/.env` (`TRELLO_DEFAULT_LIST_ID` = To Do). Add matching shortcuts in `trello/trello_client.py` `LIST_ENV` so `board.py --list` works. Skip the old Algarve day columns (Thu–Sun); this event has no locked multi-day columns yet.
-4. Let the client create the sky **Cursor** label on this board and save `TRELLO_LABEL_CURSOR`. Never paste the Algarve label id.
+1. From `tweed-valley/TVS-website/trello/`: create `.venv` if needed, `pip install -r requirements.txt`, run `board.py status`. Confirm the board id is `6acfad99aba36ddc16ab13b7` and that you are Dan Turner.
+2. The board is already set up (checked 16 Oct 2026): 7 lists (To Do, Venue, Legal / money, Race, Website, Marketing, Waiting), 28 cards, four members. List ids and `TRELLO_LABEL_CURSOR` are already in `trello/.env`. Do not create the columns again.
+3. `populate_seed.py` aborts when open cards exist. Do not re-seed unless Dan asks to archive the board first.
+4. The sky **Cursor** label already exists on this board. Never paste the Algarve label id.
 
 ### Populate
 
-- Prefer applying / adapting `trello/board-seed.json` rather than inventing a second plan from scratch.
+The seed is already on the board (28 cards). Do not run a second populate. Later edits adapt those cards:
+
+- Prefer adapting `trello/board-seed.json` rather than inventing a second plan from scratch.
 - From `docs/08-OPEN-QUESTIONS.md`: one short card per open checkbox (or merge into seed cards), matching list. Title = action. Description = one line of context + doc source. Decisions in the “don’t re-litigate” table are **not** cards.
 - From `docs/09-DOCS-TO-CREATE.md`: only items that need a person soon (domain, CIC, insurance, logo, Glentress date, SportIdent quote). Do not mirror every website section as a card.
 - From notebook + FLS notes: fold costs into checklists (not 17 cost cards); put FLS-owned items in **Waiting**.

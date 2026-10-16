@@ -1,0 +1,55 @@
+---
+description: TVS - OW scotland Trello — Dan's workspace, this board only, always mark AI work
+alwaysApply: true
+---
+
+# TVS - OW scotland Trello (AI marking)
+
+When the user asks for help with **Trello**, the **TVS board**, or anything under `tweed-valley/TVS-website/trello/`:
+
+## Scope
+
+Board: https://trello.com/b/YnZDCT0g/tvs-ow-scotland (`TRELLO_BOARD_ID` in `tweed-valley/TVS-website/trello/.env`).
+
+Workspace is **Dans workspace**. The API key and token are Dan’s existing user credentials (the same ones as Onewheel Algarve). They are not workspace-specific. Do **not** edit:
+
+- The team (Onewheel Algarve): https://trello.com/b/ofyx5226/the-team
+- The earlier empty TVS board in The Team Workspace: https://trello.com/b/YVfsqST7/tvs
+
+unless Dan explicitly asks.
+
+Read `tweed-valley/TVS-website/trello/CONTEXT.md` before the first board change.
+
+## Board now
+
+Checked 16 Oct 2026. The board is not empty.
+
+- 7 lists, left to right: To Do, Venue, Legal / money, Race, Website, Marketing, Waiting
+- 28 open cards (same counts as `board-seed.json`)
+- Four members: Dan Turner (`danturner5`), Jessica Jones (`jessicajones17`), Mollie Stuart (`molliestuart`), Nico Stuart (`nicostuart1`)
+- A sky **Cursor** label is already on the board. Its id is `TRELLO_LABEL_CURSOR` in `.env`. Do not create a second one, and never reuse the Onewheel Algarve label id.
+
+`populate_seed.py` aborts when the board already has open cards. Do not re-seed unless Dan asks.
+
+## Marker (required)
+
+Every card you **create** or **meaningfully change** must carry the sky **Cursor** label.
+
+1. Prefer `tweed-valley/TVS-website/trello/trello_client.py` — `create_card(..., tag_cursor=True)` by default.
+2. After editing an existing card, call `client.tag_cursor(card_id)`.
+3. If the label id is missing, create/find board label `Cursor` (sky) and save it to `.env` as `TRELLO_LABEL_CURSOR`. The client does this in `ensure_cursor_label()`.
+
+## Ownership
+
+Dan owns the board. Four people are members. Do not remove them. Keep cards **short and actionable** (checklist, not essays). No theme manifesto cards.
+
+## Tooling
+
+- Work from `tweed-valley/TVS-website/trello/` with `.venv` and `.env` (never commit secrets).
+- CLI: `cd tweed-valley/TVS-website/trello && .venv/bin/python board.py …`
+- List shortcuts: `todo`, `venue`, `legal`, `race`, `website`, `marketing`, `waiting`.
+- Prefer archive over delete unless asked to delete.
+
+## Comments
+
+For non-trivial AI edits on an existing card, add a short comment like: `Updated via Cursor`.

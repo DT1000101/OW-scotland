@@ -6,11 +6,8 @@ Board id: `6acfad99aba36ddc16ab13b7`
 ## For the local agent
 
 1. Pull latest `main`.
-2. Ensure this machine has the handoff scripts + secrets (not in git):
-   - `trello/.env`
-   - `trello/CONTEXT.md`, `AGENTS.md`, `board.py`, `trello_client.py`, `requirements.txt`
-   - `.cursor/rules/tvs-trello.mdc`
-3. Open `trello/LOCAL-AGENT-PROMPT.md` and paste that prompt into a **local** Cursor agent.
+2. On this machine, `trello/.env` must exist (gitignored). It is not in git. The client, `CONTEXT.md`, `AGENTS.md`, and the Cursor rule are.
+3. Open `trello/LOCAL-AGENT-PROMPT.md` before changing the board. The board already has its 7 lists and 28 cards. `populate_seed.py` aborts if cards are already there.
 
 ## In git (this folder)
 
@@ -18,7 +15,11 @@ Board id: `6acfad99aba36ddc16ab13b7`
 |------|---------|
 | `LOCAL-AGENT-PROMPT.md` | Copy-paste prompt for local agent |
 | `board-seed.json` | First-pass lists/cards/checklists (28 cards) |
+| `board.py`, `trello_client.py`, `list_boards.py`, `populate_seed.py` | Local Trello client |
+| `requirements.txt`, `.env.example`, `AGENTS.md`, `CONTEXT.md` | Setup and handoff |
 | `sources/` | Notebook + FLS notes + screenshots |
+
+The Cursor rule for this repo is `.cursor/rules/tvs-trello.mdc` at the monorepo root.
 
 ## Lists (left → right)
 
