@@ -1,0 +1,19 @@
+# OS
+.DS_Store
+
+# Node / Next (nested projects)
+node_modules/
+.next/
+out/
+build/
+
+# Env & secrets
+.env
+.env*.local
+**/.venv/
+
+# Vercel
+.vercel
+
+# Logs
+*.log

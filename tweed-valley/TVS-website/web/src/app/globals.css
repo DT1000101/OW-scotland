@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Arial Black", system-ui, sans-serif;
+  --font-body: system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-olive-dark text-sand font-body;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-display tracking-tight;
+  }
+  a {
+    @apply transition-colors;
+  }
+}
+
+/* Admin mode: a distinct backdrop so organisers always know they're in ops mode. */
+body.admin-mode {
+  @apply bg-[#241b12];
+}
+body.admin-mode .admin-banner {
+  @apply block;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md px-5 py-2.5 font-semibold transition-colors;
+  }
+  .btn-primary {
+    @apply btn bg-send text-white hover:bg-send-dark;
+  }
+  .btn-ghost {
+    @apply btn border border-sand-muted/40 text-sand hover:bg-white/5;
+  }
+  .card {
+    @apply rounded-xl border border-white/10 bg-white/5 p-6;
+  }
+  .input {
+    @apply w-full rounded-md border border-white/15 bg-olive-darker/60 px-3 py-2 text-sand placeholder:text-sand/40 focus:border-send focus:outline-none;
+  }
+  .container-tvs {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6;
+  }
+  .prose-tvs {
+    @apply leading-relaxed text-sand/90;
+  }
+  .prose-tvs p {
+    @apply mb-4;
+  }
+}
+
+@keyframes countdown-glow {
+  0%,
+  100% {
+    text-shadow: 0 0 18px rgba(232, 114, 42, 0.35);
+    transform: translateY(0);
+  }
+  50% {
+    text-shadow: 0 0 28px rgba(232, 114, 42, 0.55);
+    transform: translateY(-1px);
+  }
+}
+
+.countdown-pulse {
+  animation: countdown-glow 2.8s ease-in-out infinite;
+}

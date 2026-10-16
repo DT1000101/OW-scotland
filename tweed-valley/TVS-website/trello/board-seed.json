@@ -1,0 +1,371 @@
+{
+  "board": {
+    "name": "TVS — OW Scotland",
+    "url": "https://trello.com/b/YnZDCT0g/tvs-ow-scotland",
+    "id": "6acfad99aba36ddc16ab13b7",
+    "defaultList": "To Do",
+    "labels": [
+      { "name": "Cursor", "color": "sky" },
+      { "name": "Critical path", "color": "red" },
+      { "name": "Jess", "color": "purple" },
+      { "name": "Mollie", "color": "pink" },
+      { "name": "Nico", "color": "green" },
+      { "name": "Dan", "color": "blue" },
+      { "name": "Budget", "color": "orange" }
+    ]
+  },
+  "lists": [
+    "To Do",
+    "Venue",
+    "Legal / money",
+    "Race",
+    "Website",
+    "Marketing",
+    "Waiting"
+  ],
+  "skipped": [
+    {
+      "item": "Every public website section as its own card (Home/About/FAQ/etc.)",
+      "why": "docs/09 says only people-soon items; site shell already exists"
+    },
+    {
+      "item": "Decisions table rows (name, venue, CIC, no pro/am, website-only, Firebase, Stripe…)",
+      "why": "docs/08 don't-re-litigate — not cards"
+    },
+    {
+      "item": "Theme / manifesto / vibe card",
+      "why": "noise; already covered in docs/02"
+    },
+    {
+      "item": "Algarve Thu–Sun day columns",
+      "why": "wrong event shape; TVS date columns wait until Glentress locks dates"
+    },
+    {
+      "item": "Separate card per cost line (stickers, wristbands, trophies…)",
+      "why": "merged into one Budget checklist so the board stays scannable"
+    }
+  ],
+  "notes": [
+    "Website currently shows Sat 1 – Sun 2 May 2027; docs/08 still has date TBC — keep date confirm card until FLS/Glentress lock it.",
+    "Schedule draft in docs/02 is multi-day (arrival→Mon); May Sat–Sun may compress that — resolve when booking.",
+    "Twitcher may be unavailable (FLS reshaping) — don't treat overview trail names as final."
+  ],
+  "cards": [
+    {
+      "list": "Venue",
+      "title": "Get written FLS classification for Onewheel at Glentress",
+      "labels": ["Critical path", "Nico"],
+      "desc": "Motorsport vs e-bike / cycling framing, Section 11/OAR, £115 fee path, and any EOL/OWS licence. Source: FLS meeting notes + WhatsApp + docs/08.",
+      "checklist": [
+        "Confirm how FLS will classify the event in writing",
+        "Confirm event fee / rate-card path (~£115 mentioned)",
+        "Ask about national Onewheel permissions framework (FLS rep)",
+        "Ask if EOL or OWS can sit as governing / licence body",
+        "Park deep insurance spend until classification is clear"
+      ]
+    },
+    {
+      "list": "Venue",
+      "title": "Lock Glentress date, hire cost, and capacity",
+      "labels": ["Critical path", "Nico"],
+      "desc": "Working target Sat 1 – Sun 2 May 2027 on the site; confirm availability and full hire breakdown. Source: docs/08, notebook, website date.",
+      "checklist": [
+        "Confirm May weekend (or alternate) with Glentress/FLS",
+        "Full venue hire cost breakdown",
+        "Max capacity recommendation",
+        "Agree how many stages open at once (half open / half closed preferred by FLS?)"
+      ]
+    },
+    {
+      "list": "Venue",
+      "title": "Get trail map and authorise race stages",
+      "labels": ["Nico"],
+      "desc": "FLS to supply map; organisers pick preferred stages and get authorisation. Twitcher being reshaped — may be out. Source: FLS follow-ups + docs/08.",
+      "checklist": [
+        "Receive FLS trail map",
+        "Propose ~6 enduro stages on existing trails",
+        "Confirm each stage authorised",
+        "Note Twitcher availability",
+        "Check if Glentress already has SportIdent beacons on trails"
+      ]
+    },
+    {
+      "list": "Venue",
+      "title": "Camping, lodge, parking with Blair",
+      "labels": ["Nico", "Jess"],
+      "desc": "Email Blair: camping block, event field possibly free, £6 parking each entry/exit, book lodge for OneWheel Scotland. Source: notebook + FLS notes + docs/08.",
+      "checklist": [
+        "Contact Blair — camping / field use",
+        "Clarify parking (£6 in/out)",
+        "Block or individual camping booking",
+        "Book lodge for OneWheel Scotland"
+      ]
+    },
+    {
+      "list": "Venue",
+      "title": "Hub, structures, noise, and music rules",
+      "labels": ["Nico"],
+      "desc": "Covered hub near toilets, structure charges (likely free), noise curfew, SBC music rules — avoiding music may simplify. Source: docs/08 + FLS notes.",
+      "checklist": [
+        "Confirm covered area as main hub",
+        "Confirm charge (if any) for event structures / tents",
+        "Noise curfew for hub / bingo",
+        "Decide music: skip if SBC paperwork is painful"
+      ]
+    },
+    {
+      "list": "Venue",
+      "title": "Catering — café first, then trucks",
+      "labels": ["Jess"],
+      "desc": "Café has priority; get manager details. Optional small coffee wagon (~£130). Food trucks / Bross pizza only after café path clear. Source: FLS notes + notebook.",
+      "checklist": [
+        "Get café manager contact and email them",
+        "Clarify food truck rules (commission vs flat fee)",
+        "Decide if coffee wagon / pizza truck is needed"
+      ]
+    },
+    {
+      "list": "Venue",
+      "title": "Charging and rider trail access rules",
+      "labels": ["Nico"],
+      "desc": "Bike shop / campsite hookup / bring-our-own; are riders allowed on non-race trails during the event? Source: docs/08 + chat.",
+      "checklist": [
+        "Agree charging plan with venue",
+        "Confirm non-race trail access during event",
+        "Land permission / their waiver requirements for us"
+      ]
+    },
+    {
+      "list": "Venue",
+      "title": "Local services outreach",
+      "labels": ["Jess", "Mollie"],
+      "desc": "People to reach out to locally. Source: notebook page 2.",
+      "checklist": [
+        "Hotels",
+        "Zip line / Go Ape",
+        "Bike shop",
+        "Uplift"
+      ]
+    },
+    {
+      "list": "Waiting",
+      "title": "Waiting: FLS trail map",
+      "labels": ["Nico"],
+      "desc": "FLS action — supply trail map. Source: FLS follow-up table."
+    },
+    {
+      "list": "Waiting",
+      "title": "Waiting: FLS national Onewheel framework",
+      "labels": ["Critical path"],
+      "desc": "FLS representative working on national permissions framework. Source: FLS meeting notes."
+    },
+    {
+      "list": "Legal / money",
+      "title": "Set up OneWheel Scotland CIC",
+      "labels": ["Critical path", "Jess", "Budget"],
+      "desc": "Jess investigating CIC (incl. paperwork costs). Unlocks bank, Stripe, liability shape. Source: notebook + docs/08 + chat.",
+      "checklist": [
+        "Read CIC paperwork properly",
+        "Register CIC",
+        "Open CIC bank account",
+        "Note any CIC setup costs in budget"
+      ]
+    },
+    {
+      "list": "Legal / money",
+      "title": "Insurance — £10m PL path and category",
+      "labels": ["Critical path", "Mollie", "Budget"],
+      "desc": "Public liability for event; check EOL governing-body option; FLS needs £10m. Follow after FLS classification. Source: docs/08, chat, FLS notes, notebook.",
+      "checklist": [
+        "Clarify if EOL can provide governing-body arrangement",
+        "Get specialist sports PL quotes (£10m)",
+        "Check motorsport / PEV exclusions",
+        "Confirm FLS can be noted as landowner",
+        "Insurer review of waiver text"
+      ]
+    },
+    {
+      "list": "Legal / money",
+      "title": "EOL event application / ranking status",
+      "labels": ["Jess"],
+      "desc": "Submit EOL application; confirm ranking vs enduro-only. Source: notebook To do + org checklist.",
+      "checklist": [
+        "EOL season application",
+        "Confirm what results format EOL needs (if ranking)"
+      ]
+    },
+    {
+      "list": "Legal / money",
+      "title": "Budget, tickets, and break-even",
+      "labels": ["Jess", "Mollie", "Budget"],
+      "desc": "One money card — costs from notebook + ticket model. Source: notebook Costs + docs/08/09.",
+      "checklist": [
+        "Break-even spreadsheet",
+        "Ticket types: weekend rider etc.",
+        "Tiered pricing?",
+        "Pay in 3?",
+        "Refund / cancellation policy",
+        "Stripe account on CIC",
+        "Cost: domain + renewal",
+        "Cost: timing (SportIdent)",
+        "Cost: insurance + event fee",
+        "Cost: first aid",
+        "Cost: wristbands / stickers / signage",
+        "Cost: merch / goodie packs / trophies",
+        "Cost: tents / structures / photographer / raffle-or-bingo prizes / filament unicorns"
+      ]
+    },
+    {
+      "list": "Legal / money",
+      "title": "Risk assessment and safety paperwork",
+      "labels": ["Jess"],
+      "desc": "Jess owns RA; include dismount guidance; align with FLS/EOL. Source: notebook + FLS notes + docs/09.",
+      "checklist": [
+        "Draft risk assessment",
+        "Dismount / safety info prep",
+        "Event management plan for Glentress",
+        "First aid plan + emergency contacts",
+        "Adult + guardian waiver drafts (legal review later)"
+      ]
+    },
+    {
+      "list": "Race",
+      "title": "SportIdent quote (and Adam fallback)",
+      "labels": ["Mollie", "Dan", "Budget"],
+      "desc": "~6–7 simultaneous stages; wrist chips preferred; Glentress 7 uses SI. Source: docs/08/09 + chat.",
+      "checklist": [
+        "SI quote for ~6–7 stages",
+        "Wrist vs ankle chips",
+        "How many beacons at once",
+        "Adam quote for team endurance only",
+        "Fallback if SI too expensive"
+      ]
+    },
+    {
+      "list": "Race",
+      "title": "Finalise race formats after scoping",
+      "labels": ["Nico", "Mollie"],
+      "desc": "Direction already agreed in docs — fill details after trails locked. Source: docs/02 + docs/08.",
+      "checklist": [
+        "Final 6 segment list",
+        "Team race details (size, timing)",
+        "Endurance format (laps/distance)",
+        "Groms plan (guided vs marshal rules)",
+        "Bonus 4 trails for completed-it",
+        "Chair race yes/no (skills area fun only)"
+      ]
+    },
+    {
+      "list": "Race",
+      "title": "First aid provider",
+      "labels": ["Nico", "Budget"],
+      "desc": "Nico ask ambulance/events first-aid contact; Millie option; vehicle permission already raised with FLS. Source: notebook + chat + FLS notes.",
+      "checklist": [
+        "Nico contact events first-aid / ambulance guy",
+        "Confirm cover for full event duration",
+        "Confirm first-aid vehicle access with FLS"
+      ]
+    },
+    {
+      "list": "Race",
+      "title": "Confirm key people roles",
+      "labels": ["Jess"],
+      "desc": "Don't reopen Katie ban / Andy arm's-length — just confirm working roles. Source: docs/01 + docs/08.",
+      "checklist": [
+        "James confirmed as MC",
+        "Andy scope agreed (advisory / merch / Americans only)",
+        "Photographer (Emilie) confirmed",
+        "Volunteer shift structure sketched",
+        "Who has website admin access"
+      ]
+    },
+    {
+      "list": "Website",
+      "title": "Buy / point domain",
+      "labels": ["Dan", "Budget"],
+      "desc": "tweedvalleysenduro.com (or chosen). Source: docs/08/09.",
+      "checklist": [
+        "Pick final domain",
+        "Register + renewal reminder",
+        "Point at Vercel"
+      ]
+    },
+    {
+      "list": "Website",
+      "title": "Turn on accounts and payments (when CIC ready)",
+      "labels": ["Dan"],
+      "desc": "Firebase + Stripe test mode — after CIC/bank. Source: docs/08/09.",
+      "checklist": [
+        "Firebase project",
+        "Stripe test mode wired",
+        "Who sends transactional emails",
+        "Video hosting choice for trail guides"
+      ]
+    },
+    {
+      "list": "Website",
+      "title": "GDPR / data retention for rider accounts",
+      "labels": ["Dan", "Jess"],
+      "desc": "Needed before real registrations. Source: docs/08."
+    },
+    {
+      "list": "Marketing",
+      "title": "Finalise logo (map-pin, small-size readable)",
+      "labels": ["Mollie", "Dan"],
+      "desc": "WIP exists; needs un-AI / thistle pass and small-size clarity. Source: docs/08/09 + chat.",
+      "checklist": [
+        "Final logo",
+        "Favicon + OG image",
+        "Business cards (Mollie)"
+      ]
+    },
+    {
+      "list": "Marketing",
+      "title": "Sponsor pack and first outreach",
+      "labels": ["Jess", "Mollie"],
+      "desc": "Notebook sponsor list + Fungineers/MO cash possibility. Source: notebook + docs/01/09.",
+      "checklist": [
+        "One-page sponsor pack",
+        "Fungineers / MO",
+        "TFL Europe",
+        "Floatwheel",
+        "MacB water / Tunnocks / Irn Bru (Barr is picky)"
+      ]
+    },
+    {
+      "list": "Marketing",
+      "title": "Announcement and pre-sale plan",
+      "labels": ["Jess", "Mollie"],
+      "desc": "Only after date is real. Source: docs/08.",
+      "checklist": [
+        "Announce date (OWS + EOL timing)",
+        "Portugal pre-sale merch plan (Filipe transfers)",
+        "Local pubs/cafes email-ahead + unicorn hunt partners"
+      ]
+    },
+    {
+      "list": "To Do",
+      "title": "Scoping trip — film segments and venue photos",
+      "labels": ["Nico", "Dan"],
+      "desc": "Needed before trail pages and marketing look real. Source: docs/09 + org checklist.",
+      "checklist": [
+        "Visit and ride candidate stages",
+        "Film looping segment walkthroughs",
+        "Venue / hub / camping photos",
+        "Note Twitcher / closed-trail constraints on the day"
+      ]
+    },
+    {
+      "list": "To Do",
+      "title": "Explore June/July exposure opportunity",
+      "labels": ["Jess", "Nico"],
+      "desc": "FLS mentioned late June / early July exposure opportunity (name unclear). Source: FLS notes."
+    },
+    {
+      "list": "To Do",
+      "title": "Offer trail-maintenance volunteering to FLS",
+      "labels": ["Nico"],
+      "desc": "Organisers volunteered; follow up with FLS. Source: FLS notes."
+    }
+  ]
+}
