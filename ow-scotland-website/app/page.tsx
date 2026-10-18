@@ -15,19 +15,19 @@ export default function HomePage() {
               height={910}
             />
             <div>
-              <p className="kicker">Rider-run community</p>
               <h1>Onewheel Scotland</h1>
-              <p className="tagline">No stress, just stoke</p>
-              <p className="support">Fungineertech powered adventures through Scotland.</p>
+              <p className="support">
+                Group rides on trail centres and paths across Scotland. New riders can come
+                along.
+              </p>
             </div>
           </div>
         </section>
         <div className="page">
           <div className="wrap">
             <p className="lede">
-              We ride trail centres and scenic paths across Scotland, help new riders get
-              started, and turn up for trail care in the Tweed Valley. This is the public
-              face of the community, for riders, venues, and insurers.
+              We join trail-care days in the Tweed Valley, and we are working toward a small
+              race at Glentress.
             </p>
             <div className="grid-3">
               <article className="card">

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s · Onewheel Scotland",
   },
   description:
-    "Onewheel Scotland is a rider-run community. Fungineertech powered adventures through Scotland. No stress, just stoke.",
+    "Group rides on trail centres and paths across Scotland. New riders can come along.",
   icons: { icon: "/logo.jpg" },
 };
 

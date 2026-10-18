@@ -187,8 +187,11 @@ h1 {
 }
 
 .support {
-  margin: 0.45rem 0 0;
-  color: #d5e0e6;
+  margin: 0.35rem 0 0;
+  max-width: 28rem;
+  font-size: 1.2rem;
+  line-height: 1.45;
+  color: #e7eef2;
 }
 
 .page {
