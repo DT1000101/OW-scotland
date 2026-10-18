@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Footer, Header } from "@/components/chrome";
 
 export const metadata: Metadata = {
   title: "Events",
   description:
-    "Tweed Valley Senduro is a Glentress race Onewheel Scotland is working toward for 2027.",
+    "Tweed Valley Senduro is a proposed Onewheel enduro at Glentress, aiming for 2027. Nothing is booked yet.",
 };
 
 export default function EventsPage() {
@@ -14,60 +15,63 @@ export default function EventsPage() {
       <main id="content" className="page">
         <div className="wrap">
           <p className="kicker" style={{ color: "var(--teal-deep)" }}>
-            Working toward 2027
+            What&apos;s happening
           </p>
-          <h1>Tweed Valley Senduro</h1>
-          <p className="lede">
-            Onewheel Scotland is working toward a Scottish round of the European Onewheel
-            League at Glentress. The event name is Tweed Valley Senduro. The aim is a first
-            event in 2027.
-          </p>
-          <section className="panel">
-            <h2>The shape of the race</h2>
-            <ul className="clean">
-              <li>A small, marshalled field on existing mountain-bike trails.</li>
-              <li>One rider on a race trail at a time.</li>
-              <li>Riders follow the direction the trails were built.</li>
-              <li>The course uses the hill as it is. We are not adding features.</li>
-              <li>Anyone on a board wears a helmet and wrist guards.</li>
-              <li>A briefing, marshals, and first aid are part of the plan.</li>
-              <li>Demonstrations are supervised.</li>
-              <li>Riders give way to other people on the hill.</li>
-            </ul>
-          </section>
-          <section className="section">
-            <h2>Permission</h2>
+          <h1>Events</h1>
+          <div className="prose">
             <p>
-              We are in conversation with Forestry and Land Scotland. Onewheels are classed as
-              motorised vehicles. A national way for members of a governing body to use
-              Forestry land was discussed as future work.
+              Most of what we do is just getting together to ride. We&apos;re also hoping to
+              bring something a bit bigger to Scotland.
+            </p>
+          </div>
+
+          <section className="section prose">
+            <h2>Tweed Valley Senduro</h2>
+            <h3>A Onewheel enduro in the Tweed Valley — hopefully in 2027</h3>
+            <p>
+              Every time we ride at Glentress, someone says it would make a brilliant venue
+              for a Onewheel event. There are loads of purpose-built MTB trails, a great
+              setting and the sort of facilities that could make a full weekend of it.
+            </p>
+            <p>So we&apos;ve started exploring the idea of Tweed Valley Senduro.</p>
+            <p>
+              The plan we&apos;re looking at is an enduro-style race with several timed stages on
+              existing trails. Riders would tackle each stage individually, with an
+              opportunity to practise beforehand if the final arrangements allow it.
+              We&apos;d love it to be a weekend where people come for the riding and stay for
+              the company.
             </p>
             <p>
-              A closed-trail event still needs a Section 11 order from Scottish Borders Council,
-              a written risk assessment, and public liability insurance.
+              Nothing&apos;s booked or officially confirmed yet. We&apos;re speaking to the relevant
+              people about routes, permissions and how the event could work safely.
+              We&apos;ll share proper details once there&apos;s something definite to announce.
             </p>
+            <p className="status">
+              Proposed event · Aiming for 2027 · Glentress, Tweed Valley
+            </p>
+            <div className="actions">
+              <a className="btn" href="https://tweed-valley-senduro.vercel.app/">
+                Visit the Senduro site
+              </a>
+              <a className="btn secondary" href="https://www.instagram.com/tweedvalleysenduro/">
+                @tweedvalleysenduro
+              </a>
+            </div>
           </section>
-          <section className="section grid-2">
-            <article className="panel">
-              <h2>Event site</h2>
-              <p>
-                Plans for the race are being written up on the event site. The event also has
-                its own Instagram, separate from this organisation.
-              </p>
-              <p>
-                <a href="https://tweed-valley-senduro.vercel.app">tweed-valley-senduro.vercel.app</a>
-              </p>
-              <p>
-                <a href="https://www.instagram.com/tweedvalleysenduro/">@tweedvalleysenduro</a>
-              </p>
-            </article>
-            <article className="panel">
-              <h2>Other UK events</h2>
-              <p>
-                Float the Highlands, at Glencoe, and Shred the Shires are neighbouring events
-                in the same sport. Onewheel Scotland is its own organisation.
-              </p>
-            </article>
+
+          <section className="section prose">
+            <h2>Other events</h2>
+            <p>
+              There&apos;s already a brilliant Onewheel event scene around the UK and Europe,
+              including events such as Float the Highlands and Shred the Shires. We love
+              seeing people make the effort to bring riders together.
+            </p>
+            <p>If you&apos;re organising something you&apos;d like us to share, get in touch.</p>
+            <div className="actions">
+              <Link className="btn" href="/contact">
+                Get in touch
+              </Link>
+            </div>
           </section>
         </div>
       </main>

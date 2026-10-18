@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s · Onewheel Scotland",
   },
   description:
-    "Group rides on trail centres and paths across Scotland. New riders can come along.",
+    "Good rides. Good people. A community of Onewheel riders across Scotland.",
   icons: { icon: "/logo.jpg" },
 };
 

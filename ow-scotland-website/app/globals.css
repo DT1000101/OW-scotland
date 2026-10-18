@@ -102,9 +102,8 @@ a:hover {
 .brand-name span {
   display: block;
   font-family: var(--font-body), sans-serif;
-  font-size: 0.72rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.01em;
   color: #c9d5dc;
   margin-top: 0.2rem;
 }
@@ -255,6 +254,57 @@ h1 {
   text-decoration: underline;
 }
 
+.prose {
+  max-width: 42rem;
+}
+
+.prose p {
+  margin: 0 0 0.9rem;
+}
+
+.prose p:last-child {
+  margin-bottom: 0;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.15rem;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--teal-deep);
+  color: white;
+  text-decoration: none;
+  padding: 0.62rem 1rem;
+  border-radius: 999px;
+  font-weight: 650;
+  border: 1px solid var(--teal-deep);
+}
+
+.btn.secondary {
+  background: transparent;
+  color: var(--teal-deep);
+}
+
+.btn:hover {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: white;
+}
+
+h3 {
+  font-size: 1.35rem;
+  margin: 0.2rem 0 0.7rem;
+}
+
+.status {
+  color: var(--muted);
+  margin: 1rem 0 0;
+}
+
 .section {
   margin-top: 2.4rem;
 }
@@ -310,6 +360,28 @@ ul.clean li + li {
 
 .band a {
   color: #f6d7c4;
+}
+
+.band .btn {
+  background: #f6d7c4;
+  border-color: #f6d7c4;
+  color: var(--navy);
+}
+
+.band .btn.secondary {
+  background: transparent;
+  color: #f6d7c4;
+  border-color: #f6d7c4;
+}
+
+.band .btn:hover {
+  background: white;
+  border-color: white;
+  color: var(--navy);
+}
+
+.prose .note {
+  margin-top: 0.9rem;
 }
 
 .site-footer {
