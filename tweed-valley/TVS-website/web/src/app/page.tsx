@@ -15,7 +15,6 @@ const REEL_CLIPS = [
 export default function Home() {
   return (
     <>
-      <p className="text-center text-2xl font-bold text-blue-500">testtttttt</p>
       <section className="relative overflow-hidden">
         <div className="container-tvs grid gap-10 py-16 sm:py-20 lg:grid-cols-2 lg:items-center">
           <div>
